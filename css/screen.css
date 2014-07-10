@@ -1,0 +1,98 @@
+html,body {
+	margin: 0;
+	padding: 0;
+
+	background-color: #222222;
+}
+
+.canvas {
+	width: 1024px;
+	height: 400px;
+	margin: auto;
+	margin-top: 20px;
+	
+	overflow: hidden;
+	background-color: #d8d8d7;
+	position: relative;
+}
+
+.floor {
+	height: 27px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-image: url(../img/floor01.png);
+}
+
+.bg01 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/bg.png);	
+	bottom: 25px;
+	left: 0px;
+	background-position: bottom left;
+}
+
+.character {
+	-moz-transform: none;
+
+	width: 24px;
+	height: 49px;
+	position: absolute;
+	bottom: 26px;
+	left: 60px;
+
+	background-image: url(../img/walkcycle01.png);
+}
+
+.character.play {
+	-webkit-animation: play .6s steps(5) infinite;
+       -moz-animation: play .6s steps(5) infinite;
+        -ms-animation: play .6s steps(5) infinite;
+         -o-animation: play .6s steps(5) infinite;
+            animation: play .6s steps(5) infinite;
+}
+
+.character.left {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";	
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -121px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -121px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -121px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -121px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -121px; }
+}
+
+.info {
+	background-color: black;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	width: 984px;
+	margin: auto;
+}

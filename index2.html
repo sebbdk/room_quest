@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Room Quest</title>
+			<link rel="stylesheet" href="css/screen.css">
+	</head>
+	<body>
+
+		<div id="container" class="container" style="position: relative; width: 1024px; margin: auto;">
+			<ul id="scene" class="scene">
+				<li class="layer" data-depth="1.00"><img style="margin-left: -300px; z-index: 4;" src="img/cloud01.png"></li>
+				<li class="layer" data-depth="0.80"><img style="margin-left: 100px;" src="img/cloud02.png"></li>
+				<li class="layer" data-depth="0.60"><img style="margin-left: 200px;" src="img/cloud03.png"></li>
+				<li class="layer" data-depth="0.40"><img style="margin-left: 800px;" src="img/cloud04.png"></li>
+			</ul>
+		</div>
+
+		<div class="info" style="position: relative; z-index: 1;">
+			FPS PBX
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/libs/requestAnimationFrame.js"></script>
+		<script src="js/libs/parallax.js"></script>
+		<script src="js/libs/jquery.parallax.js"></script>
+
+        <script>
+
+        // Pretty simple huh?
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+
+        </script>
+
+	</body>
+</html>
